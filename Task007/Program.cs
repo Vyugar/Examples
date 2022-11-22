@@ -6,23 +6,28 @@ int quarterNum = new Random().Next(1, 5);
 string range = "";
 // string num = "";
 
-if (quarterNum == 1) 
+if (quarterNum == 1)
 {
     range = "x > 0, y > 0";
-} 
-else if (quarterNum == 2) 
+}
+else if (quarterNum == 2)
 {
     range = "x < 0, y > 0";
 }
-else if (quarterNum == 3) 
+else if (quarterNum == 3)
 {
     range = "x < 0, y < 0";
 }
-
-else 
+else if (quarterNum == 4)
 {
-range = "x > 0, y < 0";
+    range = "x > 0, y < 0";
 }
-
-System.Console.WriteLine($"Для {quarterNum}-й четверти координаты точки должны быть заданы в диапазоне ( {range} )");
-System.Console.WriteLine();
+if (quarterNum > 4)
+{
+    Console.WriteLine($"Для {quarterNum}-й четверти координаты точки не определяются");
+}
+else
+{
+    System.Console.WriteLine($"Для {quarterNum}-й четверти координаты точки должны быть заданы в диапазоне ( {range} )");
+    System.Console.WriteLine();
+}
