@@ -14,7 +14,7 @@ Console.Write("Введите время приезда на День рожде
 string timeUser = Console.ReadLine();
 string timeNumber = "14.00";
 
-if (timeUser == timeNumber) 
+if (timeUser == timeNumber)
 {
     Console.WriteLine($"Указанное Вами время {timeUser} верное");
 }
